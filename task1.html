@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task1 HTML</title>
+    <style>
+      .form {
+        margin-bottom: 5px;
+        width: 13vw;
+        display: flex;
+        justify-content: space-between;
+      }
+      .btn {
+        padding: 5px;
+        width: 150px;
+        margin-left: 20px;
+        margin-top: 20px;
+        background-color: rgb(228, 221, 221);
+        border-radius: 5px;
+        border: 2px solid rgb(29, 28, 28);
+        font-weight: bold;
+      }
+      .btn:hover {
+        background-color: rgb(43, 42, 40);
+        border: 2px solid rgb(223, 164, 164);
+        color: white;
+        transition: 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HTML Form Example</h1>
+    <p>
+      This is an example of
+      <span style="text-decoration: line-through"> HTML4</span>
+      <span style="text-decoration: underline">HTML5</span> form containing
+      يحتوى various <span style="background-color: yellow">input</span> controls
+      :
+    </p>
+    <form action="">
+      <fieldset>
+        <legend style="margin-left: 20px; padding: 0 2px">
+          User Information
+        </legend>
+        <div class="form">
+          <label for="User">user name</label>
+          <input type="text" id="User" />
+        </div>
+        <div class="form">
+          <label for="Email">Email</label>
+          <input type="email" id="Email" />
+        </div>
+        <div class="form">
+          <label for="Pass">Password</label>
+          <input type="password" id="Pass" />
+        </div>
+      </fieldset>
+    </form>
+    <form action="">
+      <fieldset>
+        <legend style="margin-left: 20px; padding: 0 2px">
+          Contact Information
+        </legend>
+        <div class="form">
+          <label for="Phone">Phone</label>
+          <input type="tel" id="Phone" />
+        </div>
+        <div class="form" style="flex-direction: column">
+          <label for="Message">Message</label>
+          <textarea
+            cols="50"
+            rows="8"
+            placeholder="Type here"
+            id="Message"
+            style="resize: none; margin-top: 5px"
+          ></textarea>
+        </div>
+      </fieldset>
+    </form>
+    <form action="">
+      <fieldset>
+        <legend style="margin-left: 20px; padding: 0 2px">Subscribtion</legend>
+        <div>
+          <input type="checkbox" name="checkbox1" id="check1" />
+          <label for="check1">Subscribe to newsletter 1</label>
+        </div>
+        <div>
+          <input type="checkbox" name="checkbox2" id="check2" />
+          <label for="check2">Subscribe to newsletter 2</label>
+        </div>
+      </fieldset>
+    </form>
+    <form action="">
+      <fieldset>
+        <legend style="margin-left: 20px; padding: 0 2px">
+          Preferred Language
+        </legend>
+        <div>
+          <label for="languages">Select Your Preferred Language</label>
+          <select
+            name="languages"
+            id="languages"
+            style="padding: 5px; margin: 10px"
+          >
+            <option value="Arabic">Arabic</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+            <option value="Spanish">Spanish</option>
+            <option value="German">German</option>
+          </select>
+        </div>
+      </fieldset>
+    </form>
+    <form action="">
+      <fieldset>
+        <legend style="margin-left: 20px; padding: 0 2px">Feedback</legend>
+        <div style="display: flex; align-items: center">
+          <label for="Feedback">Rate Our Service</label>
+          <input
+            type="range"
+            step="20"
+            min="0"
+            max="100"
+            value="50"
+            id="Feedback"
+            name="Feedback"
+            style="margin-left: 10px"
+          />
+        </div>
+      </fieldset>
+    </form>
+    <form action="">
+      <div style="margin: 20px">
+        <input
+          type="submit"
+          style="padding: 5px; width: 100px; font-weight: bold"
+        />
+        <input
+          type="reset"
+          style="padding: 5px; width: 100px; font-weight: bold"
+        />
+      </div>
+      <a href="index.html"
+        ><input type="button" class="btn" value="Back To Tasks"
+      /></a>
+    </form>
+  </body>
+</html>

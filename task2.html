@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task2 HTML</title>
+    <style>
+      table {
+        border: 5px #000000;
+        margin: auto;
+        border-style: double;
+        width: 90vw;
+        font-weight: bold;
+      }
+      th,
+      td {
+        padding: 10px 25px;
+        text-align: left;
+        border: 5px #000000;
+        border-style: double;
+      }
+      .btn {
+        padding: 5px;
+        width: 150px;
+        margin-left: 20px;
+        margin-top: 20px;
+        background-color: rgb(228, 221, 221);
+        border-radius: 5px;
+        border: 2px solid rgb(29, 28, 28);
+        font-weight: bold;
+      }
+      .btn:hover {
+        background-color: rgb(43, 42, 40);
+        border: 2px solid rgb(223, 164, 164);
+        color: white;
+        transition: 1s;
+      }
+      caption {
+        font-weight: bold;
+        margin-bottom: 5px;
+        font-size: 1.5rem;
+      }
+      .div1 {
+        width: 40px;
+        height: 40px;
+        background-color: red;
+        border: 1px solid black;
+      }
+      .div2 {
+        width: 40px;
+        height: 40px;
+        background-color: rgb(0, 0, 0);
+        border: 1px solid black;
+      }
+      .Timg {
+        width: 50px;
+        height: 50px;
+        margin-right: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <table>
+        <caption>
+          This is a table assignment
+        </caption>
+        <tr>
+          <th>group</th>
+          <th>avatar</th>
+          <th>name</th>
+          <th>email</th>
+          <th>character</th>
+          <th>profile</th>
+        </tr>
+        <tr>
+          <td rowspan="3">ninja</td>
+          <td rowspan="2">
+            <div class="div1">
+              <p>40x40</p>
+            </div>
+          </td>
+          <td rowspan="2">
+            <p>osama</p>
+            <wbr />
+            <p>mohamed</p>
+          </td>
+          <td>o1@nn.sa</td>
+          <td rowspan="2">@</td>
+          <td rowspan="2"><a href="task2.html">Profile</a></td>
+        </tr>
+        <tr>
+          <td>o2@nn.sa</td>
+        </tr>
+        <tr>
+          <td style="display: flex">
+            <img class="Timg" src="/img/1.jpg" alt="" />
+            <p>blue avatar</p>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>monsters</td>
+          <td>
+            <div class="div2">
+              <p style="color: white">40x40</p>
+            </div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td colspan="5">total</td>
+          <td>3</td>
+        </tr>
+      </table>
+    </div>
+    <a href="index.html"
+      ><input type="button" class="btn" value="Back To Tasks"
+    /></a>
+  </body>
+</html>
